@@ -1,8 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="svg-defs" style="width: 0; height: 0;">
+    <defs>
+        <symbol id="icon-flag-fr" viewBox="0 0 512 512">
+            <title>Flag-fr</title>
+            <g fill-rule="evenodd" stroke-width="1pt">
+                <path fill="#fff" d="M0 0h512v512H0z" />
+                <path fill="#00267f" d="M0 0h170.7v512H0z" />
+                <path fill="#f31830" d="M341.3 0H512v512H341.3z" />
+            </g>
+        </symbol>
+    </defs>
+    <defs>
+        <clipPath id="a">
+            <path fill-opacity=".7" d="M250 0h500v500H250z" />
+        </clipPath>
+    </defs>
+    <defs>
+        <symbol id="icon-flag-gb" viewBox="0 0 512 512">
+            <title>Flag-gb</title>
+            <g clip-path="url(#a)" transform="translate(-256) scale(1.024)">
+                <g stroke-width="1pt">
+                    <path fill="#012169" d="M0 0h1000v500H0z" />
+                    <path fill="#fff"
+                        d="M0 0v55.9L888.2 500H1000v-55.9L111.8.1H0zm1000 0v55.9L111.8 500H0v-55.9L888.2 0H1000z" />
+                    <path fill="#fff" d="M416.7 0v500h166.6V0H416.7zM0 166.7v166.6h1000V166.7H0z" />
+                    <path fill="#c8102e"
+                        d="M0 200v100h1000V200H0zM450 0v500h100V0H450zM0 500l333.3-166.7H408L74.5 500H0zM0 0l333.3 166.7h-74.5L0 37.3V0zm592.1 166.7L925.5 0h74.5L666.7 166.7H592zm408 333.3L666.6 333.3h74.5L1000 462.7V500z" />
+                </g>
+            </g>
+        </symbol>
+    </defs>
+</svg>
+
 <header id="main-header" class="galaxy-app-header">
     <!-- Navigation -->
     <!-- <nav class="navbar navbar-expand-lg navbar-dark navbar-galaxy fixed-top"> -->
     <!-- <a href="https://getbootstrap.com/" class="d-block px-3 py-2 text-center text-bold  old-bv">There's a newer version of Bootstrap 4!</a> -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-galaxy">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-galaxy">
         <div class="container">
             <a class="navbar-brand" href="/">21 | Galaxy</a>
             <!-- <a href="" class="navbar-brand"><img src="dist/images/logo.jpg" alt="Galaxy Logo"></a> -->
@@ -23,7 +56,7 @@
             <div class="navbar-collapse" id="galaxy-nav-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-discover" role="button" aria-haspopup="true"
+                        <a class="nav-link dropdown-toggle" id="dropdown-discover" role="button" aria-haspopup="true"
                             aria-expanded="false">
                             <span>Découvrir 21 | Galaxy</span>
                             <span class="caret-wrap"><span class="caret"></span></span>
@@ -40,32 +73,70 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Expertise</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/secteurs">Secteurs</a>
+                    <li class="nav-item dropdown">
+                        <!-- <a class="nav-link" href="/secteurs">Secteurs</a> -->
+                        <a class="nav-link dropdown-toggle" id="dropdown-discover" role="button" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span>Secteurs</span>
+                            <span class="caret-wrap"><span class="caret"></span></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown-discover">
+                            <li>
+                                <a class="dropdown-item" href="/secteurs/assurance">Assurance</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/secteurs/bancaire">Bancaire</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/secteurs/education">éducation</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/secteurs/energie-et-environnement">énergie &
+                                    Environnement</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/secteurs/immobilier-et-btp">Immobilier & BTP</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Magazine</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="/contact">Contact</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-language" role="button" aria-haspopup="true"
+                        <a class="nav-link dropdown-toggle" id="dropdown-language" role="button" aria-haspopup="true"
                             aria-expanded="false">
-                            <i class="fa fa-globe"></i>
+                            <!-- <i class="fa fa-globe"></i> -->
+                            <i class="g-icon pe-7s-global"></i>
                             <span class="caret-wrap"><span class="caret"></span></span>
                             <span class="language-code d-sm-none d-md-inline-block">FR</span>
                             <span class="language-label d-md-none d-sm-inline-block">Langue</span>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown-language">
+                        <ul class="dropdown-menu dropdown-languages" aria-labelledby="dropdown-language">
                             <li>
-                                <a class="dropdown-item" href="#" data-code="EN">Anglais</a>
+                                <a class="dropdown-item" href="#" data-code="EN">
+                                    <svg class="g-icon flag-fr">
+                                        <use xlink:href="#icon-flag-gb"></use>
+                                    </svg>
+                                    <span>Anglais</span>
+
+                                </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#" data-code="ES">Espagnole</a>
+                                <a class="dropdown-item" href="#" data-code="ES">
+                                    <div class="g-icon flag-icon-es"></div>
+                                    <span>Espagnole</span>
+                                </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#" data-code="FR">Français</a>
+                                <a class="dropdown-item" href="#" data-code="FR">
+                                    <svg class="g-icon flag-fr">
+                                        <use xlink:href="#icon-flag-fr"></use>
+                                    </svg>
+                                    <span>Français</span>
+                                </a>
                             </li>
                         </ul>
                     </li>

@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title><%= title %></title>
-  <link rel="stylesheet" href="/dist/css/swiper.min.css">
-  <link rel="stylesheet" href="/dist/css/app.css">
-  
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="/dist/css/app.css">
 </head>
 
 <body>
-  <%- include('includes/header'); %>
-  <main id="main">
-    <div class="content">
-      <!-- ========Home presentation====== -->
-      <section id="galaxy-swiper" class="g-swiper-section">
-        <%- include('includes/galaxy-home-swiper'); %>
-      </section>
-      <!-- ========Services====== -->
-      <section id="galaxy-services" class="g-services-section">
-          <%- include('includes/galaxy-services'); %>
-      </section>
-      <!-- ========Working order====== -->
-      <section id="galaxy-working-order" class="g-working-order-section">
-          <%- include('includes/galaxy-working-order'); %>
-      </section>
-      <!-- ========About you====== -->
-      <section id="galaxy-about-you" class="g-about-you-section">
-          <%- include('includes/galaxy-about-you'); %>
-      </section>
-      <!-- ========Join us====== -->
-      <section id="join-galaxy" class="g-join-us-section">
-          <%- include('includes/join-galaxy'); %>
-      </section>
-      <!-- ========Partner====== -->
-      <section id="galaxy-partner" class="g-partner-section">
-          <%- include('includes/galaxy-partner'); %>
-      </section>
-      <!-- ========A section blocks====== -->
-      <section id="galaxy-blocks-secteur" class="g-blocks-secteurs-section">
-          <%- include('includes/galaxy-blocks-secteur'); %>
-      </section>
-      
-    </div>
+    <%- include('includes/header'); %>
+    <main id="main">
+        <div class="content">
+            <!-- ========Home presentation====== -->
+            <section id="galaxy-swiper" class="g-swiper-section">
+                <%- include('includes/galaxy-home-swiper'); %>
+            </section>
+            <!-- ========Services====== -->
+            <section id="galaxy-services" class="g-services-section">
+                <%- include('includes/galaxy-services'); %>
+            </section>
+            <!-- ========Working order====== -->
+            <section id="galaxy-working-order" class="g-working-order-section">
+                <%- include('includes/galaxy-working-order'); %>
+            </section>
+            <!-- ========About you====== -->
+            <section id="galaxy-about-you" class="g-about-you-section">
+                <%- include('includes/galaxy-about-you'); %>
+            </section>
+            <!-- ========Join us====== -->
+            <section id="join-galaxy" class="g-join-us-section">
+                <%- include('includes/join-galaxy'); %>
+            </section>
+            <!-- ========Partner====== -->
+            <section id="galaxy-partner" class="g-partner-section">
+                <%- include('includes/galaxy-partner'); %>
+            </section>
+            <!-- ========A section blocks====== -->
+            <section id="galaxy-blocks-secteur" class="g-blocks-secteurs-section">
+                <%- include('includes/galaxy-blocks-secteur'); %>
+            </section>
 
-  </main>
-  <footer class="galaxy-site-footer" role="contentinfo">
-      <%- include('includes/footer'); %>
-  </footer>
+        </div>
+
+    </main>
+    <footer class="galaxy-site-footer" role="contentinfo">
+        <%- include('includes/footer'); %>
+    </footer>
 
 </body>
-<script src="/dist/main.js"></script>
+<script src="/dist/commons.js"></script>
+<script src="/dist/js/index.js"></script>
 
 </html>

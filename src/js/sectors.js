@@ -1,0 +1,2 @@
+require(['./shared'], function(shared) {
+});

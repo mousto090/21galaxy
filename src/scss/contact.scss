@@ -1,0 +1,173 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+.g-contact-header {
+    min-height: 50vh;
+    background-image: url(/dist/images/contact-header.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    // color: #FFF;
+    // background-color: rgba(0,0,0, .1);
+    .g-title {
+        font-weight: 700;
+        color: #FFF;
+    }
+}
+
+.g-contact-header:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(146, 72, 72, 0.3);
+}
+
+.contact-form-wrapper {
+    margin-top: -100px;
+    box-shadow: 0px 25px 50px 2px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.g-contact-us {
+    >.container {
+        margin-bottom: 3rem
+    }
+
+    .form-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .g-col {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .g-col-form {
+        background-color: #fff;
+    }
+
+    .g-col-side {
+        background-color: #061644;
+        color: #FFF;
+    }
+
+    .col-sm-11 {
+        margin: auto;
+    }
+
+    label {
+        display: block;
+        padding-bottom: .4rem;
+    }
+
+    .form-group {
+        margin-bottom: 2rem;
+    }
+
+    .btn-submit-contact-form {
+        border-color: #061644;
+        color: #061644;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        min-width: 200px;
+    }
+
+    .btn-submit-contact-form:active,
+    .btn-submit-contact-form:hover,
+    .btn-submit-contact-form:focus {
+        outline: none !important;
+        background-color: #061644 !important;
+        color: #FFF !important;
+        box-shadow: none !important;
+    }
+
+
+    .contact-adresses {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+    }
+
+    .img-container {
+        // width: 60%;
+        // flex-basis: 60%;
+        min-height: 15rem;
+        background-image: url(/dist/images/paris.jpg);
+        background-size: cover;
+        // background-position: center;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    .adress-list {
+        background-color: #e6e6fa;
+        padding: 1.5rem .5rem 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title {
+        width: 100%;
+        padding-bottom: 1rem;
+        position: relative;
+    }
+
+    .title:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        width: 80px;
+        border-bottom: 5px solid #000;
+        transform: translate(-50%, -50%);
+    }
+
+    .adress-list .sub-section {
+        padding-bottom: .2rem;
+        padding-top: .2rem;
+    }
+
+    .adress-list .g-icon {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    .phone-icon i {
+        transform: rotate(90deg);
+    }
+
+    .siege-text {
+        display: block;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .wrapper a {
+        display: block;
+        color: #212529;
+    }
+}
+
+
+@include media-breakpoint-down(md) {
+
+    .form-contact-container,
+    .contact-location-container {
+        max-width: 95%;
+    }
+
+}
