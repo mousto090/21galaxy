@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/dist/css/app.css">
+</head>
+
+<body class="galaxy-sectors">
+    <%- include('includes/header'); %>
+    <header class="g-masthead" style="background-image: url(/dist/images/secteurs/tourisme.jpeg)">
+        <div class="container">
+            <div class="g-masthed-content">
+                <h2 class="display-4 g-title"><%= headerTitle %></h2>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="content site-content g-secteur">
+            <div class="content-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="primary-col col-lg-8">
+                            <div class="primary-inner">
+                                <p>Secteur économique clé, le tourisme a plusieurs visages :</p>
+                                <ul class="g-li">
+                                    <li>Tourisme balnéaire</li>
+                                    <li>Tourisme de montagne</li>
+                                    <li>Tourisme récréatif</li>
+                                    <li>Tourisme culturel</li>
+                                    <li>Tourisme de patrimoine</li>
+                                    <li>Tourisme vert</li>
+                                </ul>
+                                <div>Nous proposons :</div>
+                                <ul class="g-li">
+                                    <li>Définition de la stratégie de développement</li>
+                                    <li>Détermination de l’horizon d’investissement</li>
+                                    <li>Recherche de rentabilité</li>
+                                    <li>Faisabilité de votre projet</li>
+                                    <li>Positionnement sur la chaîne de valeur</li>
+                                    <li>Concept et positionnement de votre offre</li>
+                                </ul>
+                                <div>En partenariat avec USANE GO</div>
+
+                                <div class="g-collapsible-paragraph">
+                                    <div class="title">De nouvelles façon de voyager</div>
+                                    <div class="content collapse">
+                                        <ul class="g-li">
+                                            <li>Eco-tourisme</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <h3>Des voyages adaptés aux centres d'intérêt de vos clients</h3>
+                                <div class="g-collapsible-paragraph">
+                                    <div class="title">Renforcer votre gestion et optimiser vos coûts</div>
+                                    <div class="content collapse">
+                                        <p>
+                                            Définition d’organisation cible, productivité des fonctions support, optimisation de processus,
+                                            démarche Lean, optimisation de vos points de vente et réseaux/canaux de distribution,
+                                            appui à l’élaboration d’une nouvelle stratégie immobilière…
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="g-collapsible-paragraph">
+                                    <div class="title">Innover dans l’approche de votre relation client</div>
+                                    <div class="content collapse">
+                                        <p>
+                                            Réinventer la relation clients off-line et on-line. Travailler de nouveaux relais de
+                                            fidélisation (marketing local, pratiques innovantes en termes de notoriété…).
+                                            Interventions plus « classiques » de pilotage (optimisation de processus, gestion des
+                                            réclamations, leviers de fidélisation…)
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="g-collapsible-paragraph">
+                                    <div class="title">Renforcer les compétences clés de votre équipe</div>
+                                    <div class="content collapse">
+                                        <ul class="g-li">
+                                            <li>Accompagner les évolutions de métiers.</li>
+                                            <li>Anticiper les besoins en compétences et les mobilités professionnelles.</li>
+                                            <li>Elaborer une politique de formation sur mesure.</li>
+                                            <li>Renforcer les pratiques managériales.</li>
+                                            <li>Fidéliser les ressources et travailler la marque employeur.</li>
+                                            <li>Développer la posture clients…</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    <div class="font-italic font-weight-bold">A noter</div>
+                                    <div class="font-italic">
+                                        Soucieux d’intégrer les préoccupations environnementales, sociales
+                                        et éthiques de notre société dans ses activités, 21 Galaxy s’est engagé dans une
+                                        démarche de Responsabilité Sociétale des Entreprises (RSE). Par la mise en place
+                                        d’une charte, le cabinet réaffirme son engagement à promouvoir dans ses activités,
+                                        et auprès de ses salariés, clients et fournisseurs les principes suivants :
+                                        la protection de l’environnement, le respect des droits de l’Homme et des
+                                        normes du travail, la promotion d’une pratique professionnelle éthique,
+                                        conforme aux principes déontologiques et de transparence les plus élevés de la profession.
+                                    </div>
+                                </p>
+                                <div class="g-button-text-wrapper">
+                                    <span class="g-button-text">Prenez votre envol !</span>
+                                </div>
+                            </div>
+                        </div>
+                        <aside class="sidebar sidebar-col col-lg-4">
+                            <div class="sidebar-inner">
+                                <div class="text-center">
+                                    sidebar / navigation (when necessairy)
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="galaxy-site-footer" role="contentinfo">
+        <%- include('includes/footer'); %>
+    </footer>
+
+</body>
+<script src="/dist/commons.js"></script>
+<script src="/dist/js/sectors.js"></script>
+
+</html>

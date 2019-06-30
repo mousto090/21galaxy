@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/dist/css/app.css">
+</head>
+
+<body class="galaxy-magazines">
+    <%- include('includes/header'); %>
+    <header class="g-masthead">
+        <div class="container">
+            <div class="g-masthed-content">
+                <h2 class="display-4 g-title"><%= headerTitle %></h2>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="content site-content g-magazine">
+            <div class="content-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="primary-col col-lg-8">
+                            <div class="primary-inner">
+                                <h3>Qu'est-ce qu’une start-up ?</h3>
+                                <p>
+                                    Une startup est une jeune entreprise qui commence à peine à se développer. 
+                                    Les startups sont généralement petites et initialement financées et gérées par 
+                                    une poignée de fondateurs ou par un seul individu. Ces sociétés offrent un produit ou 
+                                    un service qui n'est actuellement pas proposé ailleurs sur le marché, ou que les 
+                                    fondateurs pensent être offert de manière inférieure.
+                                </p>
+                            </div>
+                        </div>
+                        <aside class="sidebar sidebar-col col-lg-4">
+                            <div class="sidebar-inner">
+                                <div class="text-center">
+                                    sidebar / navigation (when necessairy)
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="galaxy-site-footer" role="contentinfo">
+        <%- include('includes/footer'); %>
+    </footer>
+</body>
+<script src="/dist/commons.js"></script>
+<script src="/dist/js/magazine.js"></script>
+
+</html>

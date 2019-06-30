@@ -7,39 +7,36 @@
     <title><%= title %></title>
     <link rel="stylesheet" href="/dist/css/swiper.min.css">
     <link rel="stylesheet" href="/dist/css/app.css">
+    <link rel="stylesheet" href="/dist/css/index.css">
 </head>
 
-<body>
+<body class="galaxy-home">
     <%- include('includes/header'); %>
     <main id="main">
         <div class="content">
             <!-- ========Home presentation====== -->
             <section id="galaxy-swiper" class="g-swiper-section">
-                <%- include('includes/galaxy-home-swiper'); %>
+                <%- include('includes/home/header-swiper'); %>
             </section>
             <!-- ========Services====== -->
             <section id="galaxy-services" class="g-services-section">
-                <%- include('includes/galaxy-services'); %>
+                <%- include('includes/home/services'); %>
             </section>
             <!-- ========Working order====== -->
             <section id="galaxy-working-order" class="g-working-order-section">
-                <%- include('includes/galaxy-working-order'); %>
+                <%- include('includes/home/working-order'); %>
             </section>
             <!-- ========About you====== -->
             <section id="galaxy-about-you" class="g-about-you-section">
-                <%- include('includes/galaxy-about-you'); %>
+                <%- include('includes/home/about-you'); %>
             </section>
             <!-- ========Join us====== -->
             <section id="join-galaxy" class="g-join-us-section">
-                <%- include('includes/join-galaxy'); %>
+                <%- include('includes/home/join-galaxy'); %>
             </section>
             <!-- ========Partner====== -->
             <section id="galaxy-partner" class="g-partner-section">
-                <%- include('includes/galaxy-partner'); %>
-            </section>
-            <!-- ========A section blocks====== -->
-            <section id="galaxy-blocks-secteur" class="g-blocks-secteurs-section">
-                <%- include('includes/galaxy-blocks-secteur'); %>
+                <%- include('includes/home/partner'); %>
             </section>
 
         </div>

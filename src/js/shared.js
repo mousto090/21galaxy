@@ -4,9 +4,9 @@
 import './commons';
 var shared = {
     share: function(msg) {
-        console.log('in share');
+        // console.log('in share');
         
-        console.log(msg);
+        // console.log(msg);
     }
 };
 // module.exports.shared = shared;

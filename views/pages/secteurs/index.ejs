@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/dist/css/app.css">
+</head>
+
+<body class="galaxy-sectors">
+    <%- include('includes/header'); %>
+    <header class="g-masthead" style="background-image: url(/dist/images/secteurs/assurance.jpg)">
+        <div class="container">
+            <div class="g-masthed-content">
+                <h2 class="display-4 g-title"><%= headerTitle %></h2>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="content g-sectors-list">
+            <div class="g-secteurs-listing pt-4 pb-5">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="display-4 g-title ">Tous les secteurs</h2>
+                    </div>
+                    <ul class="row g-row-flex py-3">
+                        <li class="secteur-item col-12 ">
+                            <a href="/secteurs/bancaire" class="secteur p-3">
+                                Bancaire
+                            </a>
+                        </li>
+                        <li class="secteur-item col-12 ">
+                            <a href="/secteurs/assurance" class="secteur p-3">
+                                Assurance
+                            </a>
+                        </li>
+                        <li class="secteur-item col-12 ">
+                            <a href="/secteurs/education" class="secteur p-3">
+                                éducation
+                            </a>
+                        </li>
+                        <li class="secteur-item col-12 ">
+                            <a href="/secteurs/immobilier-et-btp" class="secteur p-3">
+                                Immobilier et BTP
+                            </a>
+                        </li>
+                        <li class="secteur-item col-12 ">
+                            <a href="/secteurs/energie-et-environnement" class="secteur p-3">
+                                énergie et Environnement
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="galaxy-site-footer" role="contentinfo">
+        <%- include('includes/footer'); %>
+    </footer>
+
+</body>
+<script src="/dist/commons.js"></script>
+<script src="/dist/js/sectors.js"></script>
+
+</html>

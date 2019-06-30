@@ -1,0 +1,50 @@
+/********************************
+****** Secteurs pages styles******
+*********************************/
+
+/* ========= sectors listing page======= */
+
+.g-sectors-list {
+    ul {
+        padding: 0 15px;
+    }
+
+    .secteur-item {
+        margin-bottom: 0;
+        padding: 0
+    }
+
+    .secteur {
+        color: #394EFF;
+        display: block;
+        text-transform: uppercase;
+        border-bottom: 1px solid;
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.75rem;
+        padding-left: 0 !important;
+    }
+
+    .secteur-item:nth-of-type(1) .secteur {
+        border-top: 1px solid;
+    }
+
+    .secteur:hover {
+        // background-color: #394EFF;
+        // color: #FFF;
+        color: #0064B7
+    }
+}
+
+/* ========= sector energie pages======= */
+
+/* ========= sector bank pages======= */
+.g-sector-bank {
+    ul li>div {
+        font-weight: 700
+    }
+
+    ul ul li {
+        padding: .5rem
+    }
+}

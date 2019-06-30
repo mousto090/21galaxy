@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/dist/css/app.css">
+</head>
+
+<body class="galaxy-decouvrir">
+    <%- include('includes/header'); %>
+    <header class="g-masthead" style="background-image: url(/dist/images/decouvrir/a-l-internationnal.jpg)">
+        <div class="container">
+            <div class="g-masthed-content">
+                <h2 class="display-4 g-title"><%= headerTitle %></h2>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="content site-content g-decouvrir">
+            <div class="content-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="primary-col col-lg-8">
+                            <div class="primary-inner">
+                                <p>
+                                    <span class="sitename">21 Galaxy</span> c’est un <strong>réseau d’expert implanté sur 5 continents</strong>, à travers 27 pays.
+                                    Nous accompagnons des projets “entrepreneuriaux” ou “humains” et grâce à notre mini-incubateur Futurs de France,
+                                    nous lançons des programmes de promotion d’une économie prenant en compte l’intérêt des générations futures.
+                                </p>
+                                <p>
+                                    Notre connaissance du marché local et notre réseau de partenaires à l'étranger nous permettent
+                                    également d'être aux côtés de sociétés étrangères, tant dans leurs projets d'investissement en
+                                    France que dans le cadre de leurs activités internationales menées à partir de la France.
+                                    21 galaxy réunit des experts multidisciplinaires du monde entier afin de
+                                    <strong>transformer les idées en réalité.</strong>
+                                </p>
+
+                                <p>
+                                    Nous assistons les petites et moyennes entreprises, les investisseurs privés
+                                    et les institutions publiques à chaque étape de leur développement.
+                                    Nous sommes proches de nos clients du monde entier et leur garantissons la
+                                    même qualité de services.
+                                </p>
+
+                                <h3 class="paragraph-title">
+                                    Grandir avec nous en France et dans le monde entier
+                                </h3>
+                                <p>
+                                    Avec un réseau exceptionnel de territoire national, <span class="sitename">21 Galaxy</span> accompagne partout en France,
+                                    entreprises, institutions publiques, associations et autres organisations,
+                                    dans le développement de leurs activités à l'international, dans tous les domaines.
+                                    Notre connaissance du marché local et notre réseau de partenaires à l'étranger nous
+                                    permettent également d'être aux côtés de sociétés étrangères, tant dans leurs projets
+                                    d'investissement en France que dans le cadre de leurs activités internationales menées
+                                    à partir de la France.
+                                </p>
+
+                                <h3 class="paragraph-title">Un réseau agile pour rendre possible tous vos projets</h3>
+                                <p>
+                                    Nous offrons à nos clients la force d'un réseau agile, connecté et organisé pour
+                                    répondre avec la plus grande efficacité à toutes leurs attentes.
+                                </p>
+                            </div>
+                        </div>
+                        <aside class="sidebar sidebar-col col-lg-4">
+                            <div class="sidebar-inner">
+                                <div class="text-center">
+                                    sidebar / navigation (when necessairy)
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="galaxy-site-footer" role="contentinfo">
+        <%- include('includes/footer'); %>
+    </footer>
+
+</body>
+<script src="/dist/commons.js"></script>
+<script src="/dist/js/decouvrir.js"></script>
+
+</html>

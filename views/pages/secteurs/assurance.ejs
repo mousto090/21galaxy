@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/dist/css/app.css">
+</head>
+
+<body>
+    <%- include('includes/header'); %>
+    <header class="g-masthead" style="background-image: url(/dist/images/secteurs/assurance.jpg)">
+        <div class="container">
+            <div class="g-masthed-content">
+                <h2 class="display-4 g-title"><%= headerTitle %></h2>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="content site-content g-secteur">
+            <div class="content-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="primary-col col-lg-8">
+                            <div class="primary-inner">
+                                    <h3> <span class="sitename">21 Galaxy</span></h3>
+                                <p>
+                                    Entre mondialisation, réglementation renforcée, lutte contre le blanchiment et nouvelles règles de 
+                                    distribution, le secteur des assurances/ mutuelles voit son environnement bouleversé.
+                                </p>
+                                <p>
+
+                                    Pour autant, ces changements, bien anticipés, sont sources d’opportunités pour nombre de ses acteurs : 
+                                    celles d’optimiser son capital, de sécuriser l’activité, d’innover dans ses produits, services et organisation,
+                                     de penser de nouveaux modèles et de les développer. Des défis qui, pour être relevés, nécessitent de 
+                                     s’appuyer sur des équipes d’experts aux compétences reconnues sur le marché.
+                                </p>
+                                <p>
+                                    Spécialistes du secteur assurances/mutuelles, nos équipes disposent d’une connaissance pointue de votre
+                                    environnement ainsi que de vos problématiques opérationnelles et stratégiques. Elles interviennent au 
+                                    quotidien ou dans le cadre d’opérations exceptionnelles complexes auprès des grands organismes de l’assurance, 
+                                    des mutuelles et de l’ensemble de ses acteurs (courtiers, co-assureurs et réassureurs, délégataires). 
+                                    Elles s’entourent si besoin d’avocats experts dans d’autres domaines du droit afin d’offrir un accompagnement 
+                                    full service, inventif et efficace partout en France et à l’international
+
+                                </p>
+
+                                <p>
+                                    <div class="font-italic font-weight-bold">A noter</div>
+                                    <div class="font-italic">
+                                        Soucieux d’intégrer les préoccupations environnementales, sociales
+                                        et éthiques de notre société dans ses activités, 21 Galaxy s’est engagé dans une
+                                        démarche de Responsabilité Sociétale des Entreprises (RSE). Par la mise en place
+                                        d’une charte, le cabinet réaffirme son engagement à promouvoir dans ses activités,
+                                        et auprès de ses salariés, clients et fournisseurs les principes suivants :
+                                        la protection de l’environnement, le respect des droits de l’Homme et des
+                                        normes du travail, la promotion d’une pratique professionnelle éthique,
+                                        conforme aux principes déontologiques et de transparence les plus élevés de la profession.
+                                    </div>
+                                </p>
+                                <div class="g-button-text-wrapper">
+                                    <span class="g-button-text">Prenez votre envol !</span>
+                                </div>
+                            </div>
+                        </div>
+                        <aside class="sidebar sidebar-col col-lg-4">
+                            <div class="sidebar-inner">
+                                <div class="text-center">
+                                    sidebar / navigation (when necessairy)
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="galaxy-site-footer" role="contentinfo">
+        <%- include('includes/footer'); %>
+    </footer>
+
+</body>
+<script src="/dist/commons.js"></script>
+<script src="/dist/js/sectors.js"></script>
+
+</html>

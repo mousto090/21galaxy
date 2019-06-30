@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/dist/css/app.css">
+</head>
+
+<body class="galaxy-poles">
+    <%- include('includes/header'); %>
+    <header class="g-masthead" style="background-image: url(/dist/images/poles/sante.jpeg)">
+        <div class="container">
+            <div class="g-masthed-content">
+                <h2 class="display-4 g-title"><%= headerTitle %></h2>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="content site-content g-pole">
+            <div class="content-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="primary-col col-lg-8">
+                            <div class="primary-inner">
+                                <p>
+                                    Nouveaux besoins de santé publique (vieillissement de la population, augmentation des maladies chroniques),
+                                    impératif de maîtrise des dépenses (T2A, réduction des séjours à l’hôpital), politique régionale
+                                    de santé sous la houlette des ARS, renforcement de la place du patient (démocratie sanitaire,
+                                    qualité des soins et prestations de services) ... constituent les principales évolutions structurelles
+                                    récentes du secteur de la santé en France.
+                                </p>
+                                <p>
+                                    Toutes les familles d’acteurs – producteurs de soins, industriels de la santé, et les agences,
+                                    tutelles et régulateurs – sont confrontés et doivent répondre à ces enjeux.
+                                </p>
+
+                                <div class="g-collapsible-paragraph">
+                                    <div class="title">Producteurs de soins : objectif modernisation </div>
+                                    <div class="content collapse">
+                                        <ul class="g-li">
+                                            <li>Conception, déclinaison et pilotage de plans stratégiques</li>
+                                            <li>Offre de services</li>
+                                            <li>Fluidification du parcours patient</li>
+                                            <li>Mobilisation des personnels / accompagnement du changement</li>
+                                            <li>Optimisation des fonctions support</li>
+                                            <li>Reconfiguration de la fonction RH comme levier de performance</li>
+                                            <li>Alignement des systèmes d’information hospitaliers à la stratégie</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="g-collapsible-paragraph">
+                                    <div class="title">Agences, tutelles, régulateurs : objectif optimisation </div>
+                                    <div class="content collapse">
+                                        <ul class="g-li">
+                                            <li>Conception, déclinaison et pilotage de plans stratégiques</li>
+                                            <li>Développement d’outils standards pour les agences santé</li>
+                                            <li>Modernisation des systèmes d’information</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="g-collapsible-paragraph">
+                                    <div class="title">Financeurs privés/publics : objectif l’équilibre </div>
+                                    <div class="content collapse">
+                                        <ul class="g-li">
+                                            <li>Gestion de fusions de mutuelles ou institutions paritaires</li>
+                                            <li>Développement de réseaux et stratégies commerciales</li>
+                                            <li>Conception de projets stratégiques et politiques</li>
+                                            <li>Audits et missions d’optimisation de l’organisation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="g-collapsible-paragraph">
+                                    <div class="title">Industrie de la santé : objectif innovation</div>
+                                    <div class="content collapse">
+                                        <ul class="g-li">
+                                            <li>Développement de culture managériale</li>
+                                            <li>Etudes marketing et innovation</li>
+                                            <li>Optimisation de la logistique / supply chain</li>
+                                            <li>Réorganisation de la fonction systèmes d’information</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="g-button-text-wrapper">
+                                    <span class="g-button-text">Prenez votre envol !</span>
+                                </div>
+                            </div>
+                        </div>
+                        <aside class="sidebar sidebar-col col-lg-4">
+                            <div class="sidebar-inner">
+                                <div class="text-center">
+                                    sidebar / navigation (when necessairy)
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="galaxy-site-footer" role="contentinfo">
+        <%- include('includes/footer'); %>
+    </footer>
+
+</body>
+<script src="/dist/commons.js"></script>
+<script src="/dist/js/sectors.js"></script>
+
+</html>

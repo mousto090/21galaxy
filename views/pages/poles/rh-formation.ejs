@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/dist/css/app.css">
+</head>
+
+<body class="galaxy-poles">
+    <%- include('includes/header'); %>
+    <header class="g-masthead" style="background-image: url(/dist/images/poles/rh-formations.jpg)">
+        <div class="container">
+            <div class="g-masthed-content">
+                <h2 class="display-4 g-title"><%= headerTitle %></h2>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="content site-content g-pole">
+            <div class="content-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="primary-col col-lg-8">
+                            <div class="primary-inner">
+                                <h3><span class="sitename">21 Galaxy</span> : Prenez votre place </h3>
+
+                                <p>
+                                    <span class="sitename">21 Galaxy</span> accompagne des groupes nationaux et
+                                    internationaux dans leur recrutement de hauts potentiels
+                                </p>
+
+                                <div class="g-collapsible-paragraph content-shown">
+                                    <div class="title">Services proposées</div>
+                                    <div class="content show">
+                                        <ul class="g-li">
+                                            <li>
+                                                <strong>En amont d’un process</strong> : nous vous aidons dans la préparation des entretiens et des études de cas.
+                                                Nous sommes également en mesure de vous conseiller sur votre carrière en vous informant sur les
+                                                différentes opportunités présentes sur le marché. Nous appliquons également une politique
+                                                stricte de non-discrimination.
+                                            </li>
+                                            <li>
+                                                <strong>Pendant les process</strong> : nous vous présentons de manière fidèle et fiable les postes que nous
+                                                avons en mandat, vous demandons votre accord avant toute mise en relation et partageons les
+                                                retours des interlocuteurs que vous avez rencontrés.
+                                            </li>
+                                            <li>
+                                                <strong>Après le process</strong> : nous suivons votre prise de poste et vous accompagnons durant votre
+                                                période d’intégration
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="g-collapsible-paragraph content-shown">
+                                    <div class="title">Prix</div>
+                                    <div class="content show">
+                                        <ul class="g-li">
+                                            <li><strong>Prix Cinq continents (five circles)</strong> : récompenser les talents cosmopolites.</li>
+                                            <li>En partenariat avec 21 Galaxy l’Académie, un lieu où on bâti ensemble l’avenir.</li>
+                                            <li>
+                                                La promotion <strong>« crème de la crème »</strong> : prendre les meilleurs pour en faire des passeurs de
+                                                savoir. La transmission du savoir est une des facettes de notre ADN
+                                            </li>
+                                            <li>Programme décollage : Aide aux concours.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <aside class="sidebar sidebar-col col-lg-4">
+                            <div class="sidebar-inner">
+                                <div class="text-center">
+                                    sidebar / navigation (when necessairy)
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="galaxy-site-footer" role="contentinfo">
+        <%- include('includes/footer'); %>
+    </footer>
+
+</body>
+<script src="/dist/commons.js"></script>
+<script src="/dist/js/sectors.js"></script>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/dist/css/app.css">
+</head>
+
+<body class="galaxy-decouvrir">
+    <%- include('includes/header'); %>
+    <header class="g-masthead" style="background-image: url(/dist/images/decouvrir/nos-equipes.jpg)">
+        <div class="container">
+            <div class="g-masthed-content">
+                <h2 class="display-4 g-title"><%= headerTitle %></h2>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="content site-content g-decouvrir">
+            <div class="content-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="primary-col col-lg-8">
+                            <div class="primary-inner">
+                                <h3 class="paragraph-title">
+                                    <span class="sitename">21 Galaxy</span> s’entoure de spécialiste pour être au plus proche
+                                     de vos attentes.
+                                </h3>
+                                
+                                <div class="g-collapsible-paragraph content-shown">
+                                    <div class="title">Avocats</div>
+                                    <div class="content show">
+                                        <p>
+                                            Avec l’appui d’avocats spécialisés en droit social, commercial, immobilier,
+                                            droit des sociétés, procédures collectives, nous sommes les conseillers au
+                                            quotidien du dirigeant et réalisons en partenariat avec ces derniers 
+                                            <strong>les diverses formalités liées</strong> à la vie de votre entreprise.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="g-collapsible-paragraph content-shown">
+                                    <div class="title">Notaires</div>
+                                    <div class="content show">
+                                        <p>
+                                            Pour des questions portant aussi bien sur des projets de <strong>transactions immobilières</strong>,
+                                             de succession ou pour la <strong>transmission de votre société</strong>, nous pouvons nous appuyer 
+                                             sur notre <strong>réseau de notaires</strong>.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="g-collapsible-paragraph content-shown">
+                                    <div class="title">Experts</div>
+                                    <div class="content show">
+                                        <p>
+                                            Pour des problématiques nécessitant des compétences techniques pointus nous faisant 
+                                            appel à des spécialistes capables de nous assister pour répondre au mieux à vos besoins.
+                                        </p>
+                                        <p>
+                                            Expert et fin stratège, le consultant recherche <strong>des solutions pour améliorer le fonctionnementdes entreprises</strong>. 
+                                            Ils disposent de savoir-faire avéré dans un domaine bien précis.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <aside class="sidebar sidebar-col col-lg-4">
+                            <div class="sidebar-inner">
+                                <div class="text-center">
+                                    sidebar / navigation (when necessairy)
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="galaxy-site-footer" role="contentinfo">
+        <%- include('includes/footer'); %>
+    </footer>
+
+</body>
+<script src="/dist/commons.js"></script>
+<script src="/dist/js/decouvrir.js"></script>
+
+</html>

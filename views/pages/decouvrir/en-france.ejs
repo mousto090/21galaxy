@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/dist/css/app.css">
+    <link rel="stylesheet" href="/dist/css/decouvrir.css">
+</head>
+
+<body class="galaxy-decouvrir">
+    <%- include('includes/header'); %>
+    <header class="g-masthead" style="background-image: url(/dist/images/decouvrir/en-france.jpg)">
+        <div class="container">
+            <div class="g-masthed-content">
+                <h2 class="display-4 g-title">En France</h2>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="content site-content g-decouvrir">
+            <div class="content-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="primary-col col-lg-8">
+                            <div class="primary-inner">
+                                <h3 class="paragraph-title">Le hub <strong class="sitename">21 Galaxy</strong> est un réseau d’experts à votre service</h3>
+                                <p>
+                                    Nous aidons nos clients à définir et à mettre en œuvre des stratégies gagnantes,
+                                    en mettant à leur disposition des équipes capables de les conseiller dans chacune des phases de leurs projets.
+                                </p>
+                                <p>
+                                    Nous avons coeur à améliorer le fonctionnement et la performance, actuels ou futurs de vos projet.
+                                </p>
+
+                                <h3 class="paragraph-title">
+                                    Comment fonctionne-t-on ?
+                                </h3>
+                                <p>
+                                    <strong class="sitename">21 Galaxy</strong> est composée de 4 associés étant des experts pluridisciplinaires + des collaborateurs
+                                    et des sympathisants, le tout formant 3 sphères d’influences :
+                                </p>
+                                <ul class="g-li">
+                                    <li>
+                                        <u>Le noyau</u> : <strong>L’envie de faire évoluer les choses</strong> que l’on retrouve chez les 4 associés.
+                                    </li>
+                                    <li>
+                                        <u>Les collaborateurs</u> : Des personnes passionnées, triées sur le volet,
+                                        qui sont au plus proche des attentes du client.
+                                    </li>
+                                    <li>
+                                        <u>Les sympathisants</u> : Des professeurs, des chargés d’enseignement,
+                                        des professionnels qui viennent partager et transmettre leur savoir.
+                                    </li>
+                                </ul>
+                                <h3 class="paragraph-title">Avantages</h3>
+                                <div class="g-collapsible-paragraph">
+                                    <div class="title">Pour un client</div>
+                                    <div class="content collapse">
+                                        <ul class="g-li">
+                                            <li>
+                                                Un moyen de développer et pérenniser ses activités
+                                            </li>
+                                            <li>
+                                                Possibilité de bénéficier d’un réseau d’experts et de partenaires.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="g-collapsible-paragraph">
+                                    <div class="title">
+                                        Pour un entrepreneur
+                                    </div>
+                                    <div class="content collapse">
+                                        <ul class="g-li">
+                                            <li>
+                                                Accompagnement sur mesure (étude de marché, business model, business plan, choix de la forme juridique, …)
+                                            </li>
+                                            <li>
+                                                Possibilité de mise en relation avec notre réseau
+                                            </li>
+                                            <li>
+                                                Accompagnement dans la gestion de son image
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <aside class="sidebar sidebar-col col-lg-4">
+                            <div class="sidebar-inner">
+                                <div class="text-center">
+                                    sidebar / navigation (when necessairy)
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="galaxy-site-footer" role="contentinfo">
+        <%- include('includes/footer'); %>
+    </footer>
+
+</body>
+<script src="/dist/commons.js"></script>
+<script src="/dist/js/decouvrir.js"></script>
+
+</html>

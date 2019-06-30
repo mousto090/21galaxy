@@ -6,10 +6,18 @@ import './commons';
 
 /** import css */
 import 'swiper/dist/css/swiper.min.css';
+import '../scss/index.scss';
 /** import js */
 import Swiper from 'swiper';
 import ScrollMagic from 'scrollmagic';
 import { CountUp } from 'countup.js';
+
+// import $ from 'jquery';
+// import 'slick-carousel';
+// import 'slick-carousel/slick/slick.scss';
+// import 'slick-carousel/slick/slick-theme.scss';
+
+
 
 require(['./shared'], function(shared) {
     // shared = shared.default;
@@ -17,9 +25,9 @@ require(['./shared'], function(shared) {
     var home = {
         init: function() {
             this.initScrollReveal();
-            this.initSwiper();
+            this.headerSwiper();
         },
-    
+
         initScrollReveal: function() {
             var controller = new ScrollMagic.Controller();
             const reavelables = [
@@ -28,26 +36,26 @@ require(['./shared'], function(shared) {
                 '.g-blocks-secteurs .block-item'
             ];
             const classes = reavelables.join(',');
-    
+
             $(classes).each(function(index, el) {
                 $(el).addClass('g-revealable');
                 const sr = new ScrollMagic.Scene({
                     triggerElement: el,
                     triggerHook: 0.9, // show, when scrolled 10% into view
                 });
-    
+
                 sr.setClassToggle(el, "g-reveal")
                     .reverse(false)
                     .addTo(controller);
             });
-    
+
         },
-    
+
         /**
-         * Initialize swiper instance
+         * Initialize header home swiper
          */
-        initSwiper: function() {
-            var $swiperContainer = $('.g-swiper-section .g-swiper-container');
+        headerSwiper: function() {
+            var $swiperContainer = $('.g-swiper-section .g-header-swiper-container');
             if (!$swiperContainer.length) {
                 return;
             }
@@ -88,7 +96,7 @@ require(['./shared'], function(shared) {
                     slideChangeTransitionEnd: function() {
                         const activeIndex = this.activeIndex;
                         var $slide = $(this.slides[activeIndex]);
-    
+
                         $('.g-counter').removeClass('showed');
                         var $slideCounters = $slide.find('.g-slide-counters .g-counter-value');
                         if ($slideCounters.length) {
@@ -103,27 +111,27 @@ require(['./shared'], function(shared) {
                                     if (!countUpInstances[activeIndex][index]) {
                                         var countUp = self.createCountUpInstance(el, endVal);
                                         countUpInstances[activeIndex].push(countUp);
-    
+
                                     } else {
                                         self.startCountUp(countUpInstances[activeIndex][index]);
                                     }
                                 }, index * 500);
                             });
-    
+
                         }
-    
+
                     }
                 }
             });
-    
+
             //stop / start swiper on hover
             $swiperContainer.hover(() => {
                 swiper.autoplay.stop();
             }, () => {
                 swiper.autoplay.start();
             });
-    
-    
+
+
         },
         /**
          * Create an instance of CountUp
@@ -153,10 +161,10 @@ require(['./shared'], function(shared) {
             }
         }
     };
-    
-    
+
+
     $(document).ready(function() {
         home.init();
     });
-    
+
 });

@@ -20,30 +20,24 @@
             <g clip-path="url(#a)" transform="translate(-256) scale(1.024)">
                 <g stroke-width="1pt">
                     <path fill="#012169" d="M0 0h1000v500H0z" />
-                    <path fill="#fff"
-                        d="M0 0v55.9L888.2 500H1000v-55.9L111.8.1H0zm1000 0v55.9L111.8 500H0v-55.9L888.2 0H1000z" />
+                    <path fill="#fff" d="M0 0v55.9L888.2 500H1000v-55.9L111.8.1H0zm1000 0v55.9L111.8 500H0v-55.9L888.2 0H1000z" />
                     <path fill="#fff" d="M416.7 0v500h166.6V0H416.7zM0 166.7v166.6h1000V166.7H0z" />
-                    <path fill="#c8102e"
-                        d="M0 200v100h1000V200H0zM450 0v500h100V0H450zM0 500l333.3-166.7H408L74.5 500H0zM0 0l333.3 166.7h-74.5L0 37.3V0zm592.1 166.7L925.5 0h74.5L666.7 166.7H592zm408 333.3L666.6 333.3h74.5L1000 462.7V500z" />
+                    <path fill="#c8102e" d="M0 200v100h1000V200H0zM450 0v500h100V0H450zM0 500l333.3-166.7H408L74.5 500H0zM0 0l333.3 166.7h-74.5L0 37.3V0zm592.1 166.7L925.5 0h74.5L666.7 166.7H592zm408 333.3L666.6 333.3h74.5L1000 462.7V500z" />
                 </g>
             </g>
         </symbol>
     </defs>
 </svg>
 
-<header id="main-header" class="galaxy-app-header">
+<header id="main-header" class="galaxy-app-header fixed-top">
     <!-- Navigation -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark navbar-galaxy fixed-top"> -->
-    <!-- <a href="https://getbootstrap.com/" class="d-block px-3 py-2 text-center text-bold  old-bv">There's a newer version of Bootstrap 4!</a> -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-galaxy">
         <div class="container">
             <a class="navbar-brand" href="/">21 | Galaxy</a>
             <!-- <a href="" class="navbar-brand"><img src="dist/images/logo.jpg" alt="Galaxy Logo"></a> -->
-            <button class="navbar-toggler" type="button" data-target="#galaxy-nav-collapse"
-                aria-controls="galaxy-nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-target="#galaxy-nav-collapse" aria-controls="galaxy-nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
-                <svg class="c-menu__icon" width="20" height="20" viewBox="0 0 200 200" focusable="false"
-                    aria-hidden="true">
+                <svg class="c-menu__icon" width="20" height="20" viewBox="0 0 200 200" focusable="false" aria-hidden="true">
                     <rect class="menu-line" width="120" height="10" x="40" y="45"></rect>
                     <rect class="menu-line" width="120" height="10" x="40" y="70"></rect>
                     <rect class="menu-line" width="120" height="10" x="40" y="95"></rect>
@@ -52,62 +46,185 @@
                     <rect class="menu-line" width="120" height="10" x="40" y="145"></rect>
                 </svg>
             </button>
-            <!-- <div class="collapse navbar-collapse" id="navbarResponsive"> -->
+
             <div class="navbar-collapse" id="galaxy-nav-collapse">
                 <ul class="navbar-nav ml-auto">
+                    <!-- decouvrir -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="dropdown-discover" role="button" aria-haspopup="true"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="dropdown-discover" role="button" aria-haspopup="true" aria-expanded="false">
                             <span>Découvrir 21 | Galaxy</span>
                             <span class="caret-wrap"><span class="caret"></span></span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown-discover">
                             <li>
-                                <a class="dropdown-item" href="#">21 | GALAXY en France</a>
+                                <a class="dropdown-item" href="/decouvrir-21-galaxy/en-france">En France</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">21 | GALAXY à l'international</a>
+                                <a class="dropdown-item" href="/decouvrir-21-galaxy/a-l-international">à l'international</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/decouvrir-21-galaxy/nos-equipes">Nos équipes</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/decouvrir-21-galaxy/nos-valeurs">Nos valeurs</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/decouvrir-21-galaxy/nous-rejoindre">Nous rejoindre</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Expertise</a>
-                    </li>
+                    <!-- expertise -->
                     <li class="nav-item dropdown">
-                        <!-- <a class="nav-link" href="/secteurs">Secteurs</a> -->
-                        <a class="nav-link dropdown-toggle" id="dropdown-discover" role="button" aria-haspopup="true"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="dropdown-expertise" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>Expertises</span>
+                            <span class="caret-wrap"><span class="caret"></span></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown-expertise">
+                            <li>
+                                <a class="dropdown-item" href="/expertises/accompagnement-comptable-et-financier">
+                                    Accompagnement comptable & financier
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/expertises/audit-financier">
+                                    Audit financier
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/expertises/conseil">
+                                    Conseil
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/expertises/digital">
+                                    Digital
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/expertises/expertise-comptable">
+                                    Expertise comptable
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/expertises/fiscalite">
+                                    Fiscalité
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/expertises/juridique">
+                                    Juridique
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/expertises/management-strategique">
+                                    Management stratégique
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/expertises/marketing-et-communication">
+                                    Marketing et communication
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/expertises/rh-de-talents-et-formations">
+                                    RH de talents et Formations
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- secteurs -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown-secteurs" role="button" aria-haspopup="true" aria-expanded="false">
                             <span>Secteurs</span>
                             <span class="caret-wrap"><span class="caret"></span></span>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown-discover">
+                        <ul class="dropdown-menu" aria-labelledby="dropdown-secteurs">
                             <li>
-                                <a class="dropdown-item" href="/secteurs/assurance">Assurance</a>
+                                <a class="dropdown-item" href="/secteurs/assurance">
+                                    Assurance
+                                </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="/secteurs/bancaire">Bancaire</a>
+                                <a class="dropdown-item" href="/secteurs/bancaire">
+                                    Bancaire
+                                </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="/secteurs/education">éducation</a>
+                                <a class="dropdown-item" href="/secteurs/btp-et-immobilier">
+                                    BTP & Immobilier
+                                </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="/secteurs/energie-et-environnement">énergie &
-                                    Environnement</a>
+                                <a class="dropdown-item" href="/secteurs/education">
+                                    éducation
+                                </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="/secteurs/immobilier-et-btp">Immobilier & BTP</a>
+                                <a class="dropdown-item" href="/secteurs/energie-et-environnement">
+                                    énergie & Environnement
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/secteurs/Investissements-et-innovations">
+                                    Investissements & Innovations
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/secteurs/luxe">
+                                    Luxe
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/secteurs/sante">
+                                    Santé
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/secteurs/public">
+                                    Secteur Public
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/secteurs/service">
+                                    Services
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/secteurs/social-et-solidarite">
+                                    Social & Solidarité
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/secteurs/sport">
+                                    Sport
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/secteurs/telecommunications-medias-divertissements">
+                                    Télécommunications, Médias et divertissements
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/secteurs/tourisme">
+                                    Tourisme
+                                </a>
                             </li>
                         </ul>
                     </li>
+                    <!-- magazine -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Magazine</a>
+                        <a class="nav-link" href="/magazine">Magazine</a>
                     </li>
+                    <!-- accademie -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/accademie">Accadémie</a>
+                    </li>
+                    <!-- contact -->
                     <li class="nav-item">
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="dropdown-language" role="button" aria-haspopup="true"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="dropdown-language" role="button" aria-haspopup="true" aria-expanded="false">
                             <!-- <i class="fa fa-globe"></i> -->
                             <i class="g-icon pe-7s-global"></i>
                             <span class="caret-wrap"><span class="caret"></span></span>
@@ -127,7 +244,7 @@
                             <li>
                                 <a class="dropdown-item" href="#" data-code="ES">
                                     <div class="g-icon flag-icon-es"></div>
-                                    <span>Espagnole</span>
+                                    <span>Espagnol</span>
                                 </a>
                             </li>
                             <li>

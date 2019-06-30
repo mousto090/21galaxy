@@ -18,6 +18,14 @@ app.set('port', port);
 /**
  * Create HTTP server.
  */
+// const https = require('https');
+// const fs = require('fs');
+// const options = {
+//     key: fs.readFileSync('ssl_keys/_.21-galaxy.com_private_key.key'),
+//     cert: fs.readFileSync('ssl_keys/21-galaxy.com_ssl_certificate.cer'),
+//     ca: fs.readFileSync('ssl_keys/_.21-galaxy.com_ssl_certificate_INTERMEDIATE.cer')
+// };
+// var server = https.createServer(options, app);
 
 var server = http.createServer(app);
 

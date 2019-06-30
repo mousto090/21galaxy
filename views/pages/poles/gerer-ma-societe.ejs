@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/dist/css/app.css">
+</head>
+
+<body class="galaxy-poles">
+    <%- include('includes/header'); %>
+    <header class="g-masthead" style="background-image: url(/dist/images/poles/piloter-ma-societe-1.jpg)">
+        <div class="container">
+            <div class="g-masthed-content">
+                <h2 class="display-4 g-title"><%= headerTitle %></h2>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="content site-content g-pole">
+            <div class="content-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="primary-col col-lg-8">
+                            <div class="primary-inner">
+                                <h3><span class="sitename">21 Galaxy</span>: Décollez avec nous </h3>
+
+                                <div class="g-collapsible-paragraph content-shown">
+                                    <div class="title">Bâtir le projet</div>
+                                    <div class="content show">
+                                        <p>
+                                            Cet accompagnement initial vise à s’informer et à comprendre les étapes à
+                                            accomplir grâce à :
+                                        </p>
+                                        <ul>
+                                            <li>Un atelier collectif d'information sur le montage d'un projet d'entreprise</li>
+                                            <li>Un diagnostic personnalisé</li>
+                                            <li>Un accompagnement sur mesure (étude de marché, business model, business plan, choix de la forme juridique…)</li>
+                                            <li>Une mise en relation avec un réseau de couveuses</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="g-collapsible-paragraph content-shown">
+                                    <div class="title">Piloter mon entreprise</div>
+                                    <div class="content show">
+                                        <p>
+                                            Cette étape est un accompagnement de proximité jusqu’à trois ans après la création pour
+                                            développer l’entreprise, améliorer son pilotage et favoriser sa croissance durable.
+                                            Il consiste en :
+                                        </p>
+                                        <ul class="g-li">
+                                            <li>Un parcours construit <strong>sur mesure</strong></li>
+                                            <li>Deux rendez-vous d’étape annuel et un <strong>bilan en fin de parcours</strong></li>
+                                            <li>Un <strong>suivi par un conseiller d’entreprise</strong> référent pour les 3 ans</li>
+                                            <li>Une série de <strong>workshops animés par des experts</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    <div class="font-italic font-weight-bold">A noter</div>
+                                    <div class="font-italic">
+                                        Soucieux d’intégrer les préoccupations environnementales, sociales
+                                        et éthiques de notre société dans ses activités, 21 Galaxy s’est engagé dans une
+                                        démarche de Responsabilité Sociétale des Entreprises (RSE). Par la mise en place
+                                        d’une charte, le cabinet réaffirme son engagement à promouvoir dans ses activités,
+                                        et auprès de ses salariés, clients et fournisseurs les principes suivants :
+                                        la protection de l’environnement, le respect des droits de l’Homme et des
+                                        normes du travail, la promotion d’une pratique professionnelle éthique,
+                                        conforme aux principes déontologiques et de transparence les plus élevés de la profession.
+                                    </div>
+                                </p>
+                                <div class="g-button-text-wrapper">
+                                    <span class="g-button-text">Prenez votre envol !</span>
+                                </div>
+                            </div>
+                        </div>
+                        <aside class="sidebar sidebar-col col-lg-4">
+                            <div class="sidebar-inner">
+                                <div class="text-center">
+                                    sidebar / navigation (when necessairy)
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="galaxy-site-footer" role="contentinfo">
+        <%- include('includes/footer'); %>
+    </footer>
+
+</body>
+<script src="/dist/commons.js"></script>
+<script src="/dist/js/sectors.js"></script>
+
+</html>

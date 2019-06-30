@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/dist/css/app.css">
+</head>
+
+<body class="galaxy-poles">
+    <%- include('includes/header'); %>
+    <header class="g-masthead" style="background-image: url(/dist/images/poles/luxe.jpeg)">
+        <div class="container">
+            <div class="g-masthed-content">
+                <h2 class="display-4 g-title"><%= headerTitle %></h2>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="content site-content g-pole">
+            <div class="content-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="primary-col col-lg-8">
+                            <div class="primary-inner">
+
+                                <div class="g-collapsible-paragraph content-shown">
+                                    <div class="title">France</div>
+                                    <div class="content show">
+                                        <p class="font-weight-bold">
+                                            <span class="sitename">21 Galaxy</span> vous aide à grandir en France
+                                        </p>
+                                        <p>
+                                            Le Luxe est un secteur économique clé pour l’économie française : c’est "l’exception française".
+                                            Cet “art de vivre à la Française” est le visage de la France dans le monde avec des effets
+                                            bénéfiques sur d’autres activités telles que le commerce de détail et le tourisme.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="g-collapsible-paragraph content-shown">
+                                    <div class="title">International</div>
+                                    <div class="content show">
+                                        <p class="font-weight-bold">
+                                            <span class="sitename">21 Galaxy</span> vous accompagne dans l’internationalisation de votre
+                                            entreprise de luxe
+                                        </p>
+                                        <p>
+                                            Présent sur les marchés traditionnels d'Europe et d'Amérique du Nord, les entreprises de luxe
+                                            se tournent de plus en plus vers les pays émergents (Chine, Inde, Emirats Arabes Unis). La
+                                            conquête de ces nouveaux marchés incite les acteurs du secteur à repenser leur structure
+                                            organisationnelle et à adapter leurs processus et leurs ressources à leur stratégie de
+                                            développement.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="g-collapsible-paragraph content-shown">
+                                    <div class="title">Ethique</div>
+                                    <div class="content show">
+                                        <p class="font-weight-bold">
+                                            <span class="sitename">21 Galaxy</span> vous accompagne dans l'entrepreneuriat social.
+                                            C’est dans notre ADN de construire un monde des affaires pérenne et plus équitable
+                                        </p>
+                                        <p>
+                                            Face à un monde secoué par la volatilité croissante de l'économie mondiale, l'industrie
+                                            du luxe commence à se concentrer sur la durabilité et l'éthique. Le respect de l’environnement, 
+                                            le recyclage des matériaux et l’innovation, l’intégrité tout au long de la chaîne de valeur, 
+                                            l’économie collaborative, numérique et l’entrepreneuriat social font partie des priorités 
+                                            stratégiques des entreprises du luxe.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <aside class="sidebar sidebar-col col-lg-4">
+                            <div class="sidebar-inner">
+                                <div class="text-center">
+                                    sidebar / navigation (when necessairy)
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="galaxy-site-footer" role="contentinfo">
+        <%- include('includes/footer'); %>
+    </footer>
+
+</body>
+<script src="/dist/commons.js"></script>
+<script src="/dist/js/sectors.js"></script>
+
+</html>

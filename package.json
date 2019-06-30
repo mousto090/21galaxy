@@ -21,6 +21,7 @@
     "lodash": "^4.17.11",
     "popper.js": "^1.15.0",
     "scrollmagic": "^2.0.7",
+    "slick-carousel": "^1.8.1",
     "swiper": "^4.5.0",
     "underscore-template-loader": "^1.0.0"
   },

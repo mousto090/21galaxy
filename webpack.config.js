@@ -4,8 +4,13 @@ module.exports = {
     // entry: './src/js/index.js',
     entry: {
         '/js/index': './src/js/index',
-        '/js/contact': './src/js/contact',
+        '/js/decouvrir': './src/js/decouvrir',
+        '/js/expertises': './src/js/expertises',
         '/js/sectors': './src/js/sectors',
+        '/js/magazine': './src/js/magazine',
+        '/js/accademie': './src/js/accademie',
+        '/js/contact': './src/js/contact',
+        '/js/policies': './src/js/policies',
         // '/css': './src/scss/app.scss',
     },
     output: {

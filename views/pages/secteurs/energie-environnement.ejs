@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/dist/css/app.css">
+</head>
+
+<body>
+    <%- include('includes/header'); %>
+    <header class="g-masthead bg-bottom" style="background-image: url(/dist/images/secteurs/energie-environnement.jpg)">
+        <div class="container">
+            <div class="g-masthed-content">
+                <h2 class="display-4 g-title"><%= headerTitle %></h2>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="content site-content g-secteur">
+            <div class="content-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="primary-col col-lg-8">
+                            <div class="primary-inner">
+                                <h3> <span class="sitename">21 Galaxy</span> : Au service de l’énergie</h3>
+                                <p>
+                                    La question énergétique est aujourd'hui au coeur des questions économiques et politiques.
+                                    Le secteur énergie est en pleine mutation.
+                                </p>
+                                <p>
+                                    Pour répondre à ses transformations sectorielles, les défies se présentent :
+                                </p>
+                                <ul class="g-li">
+                                    <li> <strong>Adopter</strong> son business model à de nouvelle stratégies</li>
+                                    <li> <strong>Investir</strong> dans les infrastructures d'énergie</li>
+                                    <li> <strong>Anticiper</strong> les évolutions du marché, les nouvelle politiques et stratégiques</li>
+                                    <li> <strong>Maîtriser</strong> les risques et <strong>optimiser</strong> ses performances dans cet environnement tres
+                                        concurrentiel et marqué par une réglementation de plus en plus complexe.</li>
+                                </ul>
+                                <l>
+                                    Des challenges pour l’ensemble de ses acteurs qui constituent un formidable levier
+                                    de croissance pour notre économie en permettant l’émergence de nouveaux métiers et de nouveaux
+                                    services. Une transformation qui favorise également l’innovation et les expérimentations dans un
+                                    cadre juridique parfois dérogatoire.
+                                    <p>
+                                        Notre réseau de partenaires étrangers nous permet particulièrement d’accompagner leurs projets en Afrique,
+                                        au Moyen Orient et en Asie.
+                                    </p>
+
+                                    <div class="g-collapsible-paragraph">
+                                        <div class="title">Offre</div>
+                                        <div class="content collapse">
+                                            <p>
+                                                Notre expertise est transversale et adaptée aux enjeux spécifiques à chaque étape de la chaine énergétique :
+                                            </p>
+                                            <ul class="g-li">
+                                                <li>
+                                                    Production énergétique (éolien, PV, biomasse, autres énergies renouvelables, hydroélectricité,
+                                                    hydrogène, nucléaire et productions conventionnelles, sécurité d’approvisionnement)
+                                                </li>
+                                                <li>
+                                                    Réseaux (transport et interconnexions, distribution, smart grids, financement, indépendance des
+                                                    gestionnaires de réseau de distribution)
+                                                </li>
+                                                <li>
+                                                    Commercialisation et consommation (rénovation énergétique, achat d’énergie, nouveaux usages, 
+                                                    maîtrise de la demande d’énergie)
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </p>
+
+
+                                <p>
+                                    <div class="font-italic font-weight-bold">A noter</div>
+                                    <div class="font-italic">
+                                        Soucieux d’intégrer les préoccupations environnementales, sociales
+                                        et éthiques de notre société dans ses activités, 21 Galaxy s’est engagé dans une
+                                        démarche de Responsabilité Sociétale des Entreprises (RSE). Par la mise en place
+                                        d’une charte, le cabinet réaffirme son engagement à promouvoir dans ses activités,
+                                        et auprès de ses salariés, clients et fournisseurs les principes suivants :
+                                        la protection de l’environnement, le respect des droits de l’Homme et des
+                                        normes du travail, la promotion d’une pratique professionnelle éthique,
+                                        conforme aux principes déontologiques et de transparence les plus élevés de la profession.
+                                    </div>
+                                </p>
+                                <div class="g-button-text-wrapper">
+                                    <span class="g-button-text">Prenez votre envol !</span>
+                                </div>
+                            </div>
+                        </div>
+                        <aside class="sidebar sidebar-col col-lg-4">
+                            <div class="sidebar-inner">
+                                <div class="text-center">
+                                    sidebar / navigation (when necessairy)
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="galaxy-site-footer" role="contentinfo">
+        <%- include('includes/footer'); %>
+    </footer>
+
+</body>
+<script src="/dist/commons.js"></script>
+<script src="/dist/js/sectors.js"></script>
+
+</html>

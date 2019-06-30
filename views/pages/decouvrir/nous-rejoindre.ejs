@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/dist/css/app.css">
+</head>
+
+<body class="galaxy-decouvrir">
+    <%- include('includes/header'); %>
+    <header class="g-masthead">
+        <div class="container">
+            <div class="g-masthed-content">
+                <h2 class="display-4 g-title"><%= headerTitle %></h2>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="content site-content g-decouvrir">
+            <div class="content-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="primary-col col-lg-8">
+                            <div class="primary-inner">
+                                <h3 class="paragraph-title">Faites partie de la famille</h3>
+                                <p>
+                                    <span class="sitename">21 Galaxy</span> est à l’image des personnes qui l’ont fondé : authentique.
+                                </p>
+                                <p>
+                                    Depuis le début nous avons eu coeur de garder cet esprit pionnier et d’aller à la quête des sommets.
+                                </p>
+                                <p>
+                                    Rejoindre <span class="sitename">21 Galaxy</span>, c’est avoir l’opportunité de travailler dans
+                                    un cabinet dynamique et tourné vers l’avenir, qui place le développement des
+                                    talents au cœur de ses engagements.
+                                </p>
+                                <p>
+                                    Nos valeurs: indépendance, transparence, et bonne volonté.
+                                </p>
+                                <h3 class="paragraph-title">Construisons-ensemble</h3>
+                                <p>
+                                    C’est ici que vous pourrez allier réussite et éthique.
+                                </p>
+                                <p>
+                                    C’est ici que vous pourrez vous construire sans déconstruire les autres.
+                                </p>
+                                <p>
+                                    C’est ici que vous pourrez écrire une belle page de votre histoire personnelle.
+                                </p>
+                                <p>
+                                    Que vous cherchiez à vous dépasser, à vous ressourcer, à vous former, <span class="sitename">21 Galaxy</span>
+                                    se réinvente chaque jour pour vous inviter à vivre votre propre aventure entrepreneuriale.
+                                </p>
+                                <p class="text-center text-uppercase">
+                                    Prenez place à bord du vaisseau
+                                </p>
+                                <div class="g-button-text-wrapper">
+                                    <span class="g-button-text">Nous y allons ensemble !</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <aside class="sidebar sidebar-col col-lg-4">
+                            <div class="sidebar-inner">
+                                <div class="text-center">
+                                    sidebar / navigation (when necessairy)
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="galaxy-site-footer" role="contentinfo">
+        <%- include('includes/footer'); %>
+    </footer>
+
+</body>
+<script src="/dist/commons.js"></script>
+<script src="/dist/js/decouvrir.js"></script>
+
+</html>

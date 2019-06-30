@@ -1,10 +1,37 @@
 import 'bootstrap';
 import '../scss/app.scss';
-// import '../fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css';
 var commons = {
     init: function() {
         this.navbar();
+        this.collapsibleElement();
     },
+    /**
+     * Handle collapsible element in page content
+     */
+    collapsibleElement: function() {
+        var $collapsibles = $('.g-collapsible-paragraph');
+        if (!$collapsibles.length) {
+            return;
+        }
+
+        $collapsibles.find('.title').click(function() {
+            var $this = $(this);
+            var $paragraph = $this.closest('.g-collapsible-paragraph');
+            var $content = $paragraph.find('.content');
+            $content.collapse('toggle');
+        });
+
+        $collapsibles.find('.content').on('show.bs.collapse', function() {
+            $(this).closest('.g-collapsible-paragraph').addClass('content-shown');
+        });
+
+        $collapsibles.find('.content').on('hide.bs.collapse', function() {
+            $(this).closest('.g-collapsible-paragraph').removeClass('content-shown');
+        });
+    },
+    /**
+     * Navbar envent manager
+     */
     navbar: function() {
         var $navHeader = $('.galaxy-app-header');
 
@@ -59,11 +86,18 @@ var commons = {
      * @param {Object} $navHeader 
      */
     toogleNavBar: function($navHeader) {
-        const navBarLimit = 75;
+        var navBarLimit = 75;
+        // var $masthead = $('.g-masthead');
+        // if ($masthead.length) {
+        //     var height = $masthead.hasClass('small-height') ? 200 : $masthead.hasClass('medium-height') ? 350 : 0;
+        //     // navBarLimit = height > 0 ? (height - navBarLimit) : navBarLimit;
+        // }
+
         if ($(window).scrollTop() > (navBarLimit)) {
             if (!this.navbarFixed) {
                 this.navbarFixed = true;
-                $navHeader.addClass('fixed-top').css({
+                // $navHeader.addClass('fixed-top').css({
+                $navHeader.addClass('on-scroll').css({
                     'opacity': 0,
                     'top': -32
                 }).animate({
@@ -72,10 +106,12 @@ var commons = {
                 }, 300);
             }
         }
+
         if ($(window).scrollTop() < (navBarLimit)) {
             if (this.navbarFixed) {
                 this.navbarFixed = false;
-                $navHeader.removeClass('fixed-top');
+                // $navHeader.removeClass('fixed-top');
+                $navHeader.removeClass('on-scroll');
             }
         }
     },

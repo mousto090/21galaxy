@@ -1,35 +1,20 @@
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
 
-.g-contact-header {
-    min-height: 50vh;
-    background-image: url(/dist/images/contact-header.jpg);
-    background-size: cover;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-
-    // color: #FFF;
-    // background-color: rgba(0,0,0, .1);
-    .g-title {
-        font-weight: 700;
-        color: #FFF;
+.galaxy-contact-page {
+    .g-masthead {
+        background-position: bottom center;
+        min-height: 350px;
+        min-height: 50vh;
     }
+
+    .g-masthead:before {
+        background-color: rgba(146, 72, 72, 0.3);
+    }
+
 }
 
-.g-contact-header:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(146, 72, 72, 0.3);
-}
 
 .contact-form-wrapper {
     margin-top: -100px;
@@ -101,12 +86,8 @@
     }
 
     .img-container {
-        // width: 60%;
-        // flex-basis: 60%;
         min-height: 15rem;
-        background-image: url(/dist/images/paris.jpg);
         background-size: cover;
-        // background-position: center;
         background-position: bottom center;
         background-repeat: no-repeat;
     }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/dist/css/app.css">
+</head>
+
+<body class="galaxy-sectors">
+    <%- include('includes/header'); %>
+    <header class="g-masthead" style="background-image: url(/dist/images/secteurs/service.jpg)">
+        <div class="container">
+            <div class="g-masthed-content">
+                <h2 class="display-4 g-title"><%= headerTitle %></h2>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="content site-content g-secteur">
+            <div class="content-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="primary-col col-lg-8">
+                            <div class="primary-inner">
+                                <p>
+                                    <div class="font-italic font-weight-bold">A noter</div>
+                                    <div class="font-italic">
+                                        Soucieux d’intégrer les préoccupations environnementales, sociales
+                                        et éthiques de notre société dans ses activités, 21 Galaxy s’est engagé dans une
+                                        démarche de Responsabilité Sociétale des Entreprises (RSE). Par la mise en place
+                                        d’une charte, le cabinet réaffirme son engagement à promouvoir dans ses activités,
+                                        et auprès de ses salariés, clients et fournisseurs les principes suivants :
+                                        la protection de l’environnement, le respect des droits de l’Homme et des
+                                        normes du travail, la promotion d’une pratique professionnelle éthique,
+                                        conforme aux principes déontologiques et de transparence les plus élevés de la profession.
+                                    </div>
+                                </p>
+                                <div class="g-button-text-wrapper">
+                                    <span class="g-button-text">Prenez votre envol !</span>
+                                </div>
+                            </div>
+                        </div>
+                        <aside class="sidebar sidebar-col col-lg-4">
+                            <div class="sidebar-inner">
+                                <div class="text-center">
+                                    sidebar / navigation (when necessairy)
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="galaxy-site-footer" role="contentinfo">
+        <%- include('includes/footer'); %>
+    </footer>
+
+</body>
+<script src="/dist/commons.js"></script>
+<script src="/dist/js/sectors.js"></script>
+
+</html>
