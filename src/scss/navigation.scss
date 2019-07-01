@@ -319,6 +319,8 @@ blockquote>p>cite {
         color: #061644;
     }
 
+    .navbar-nav .nav-item.active>.nav-link,
+    .navbar-nav .nav-item.active a.active,
     .navbar-nav .nav-item .nav-link:hover {
         color: #ed7d31;
     }
@@ -437,7 +439,6 @@ blockquote>p>cite {
 
 // ==========primary col========
 .primary-col .primary-inner {
-    // text-align: justify;
 
     h1,
     h2,
@@ -448,69 +449,57 @@ blockquote>p>cite {
         color: #061644
     }
 
-    ul.g-li-star,
-    ul.g-li-checkmark,
-    ul.g-li-diamond,
-    ul.g-li-default,
-    ul.g-li {
-        padding-left: 35px;
+    ul.g-ul {
+        padding-left: 1.2rem;
+
+        >li {
+            position: relative;
+            line-height: 1.6;
+        }
+
+        >li::before {
+            content: "\2022";
+            position: absolute;
+            color: #ed7d31;
+            font-weight: bold;
+            display: inline-block;
+            width: 1.2rem;
+            margin-left: -1.2rem;
+            top: 0;
+        }
+
+        &.checkmark>li::before {
+            content: '\2713';
+        }
+
+        &.diamond>li::before {
+            content: "\2756";
+        }
+
+        &.star>li::before {
+            content: "\2605";
+        }
+
+        &.arrow-right {
+            padding-left: 30px;
+
+            >li:before {
+                content: "\00a0";
+                width: 22px;
+                margin-left: -30px;
+                background-image: url(/dist/images/arrow-right.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
     }
 
-    ul.g-li-star li::before,
-    ul.g-li-checkmark li::before,
-    ul.g-li-diamond li::before,
-    ul.g-li-default li::before {
-        content: "\2022";
-        color: #ed7d31;
-        font-weight: bold;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-    }
 
-    ul.g-li-star>li,
-    ul.g-li-checkmark>li,
-    ul.g-li-diamond>li,
-    ul.g-li-default>li,
-    .g-li>li {
-        position: relative;
-        line-height: 1.8;
-    }
 
-    ul.g-li-diamond>li::before {
-        content: "\2756";
-    }
 
-    ul.g-li-checkmark>li::before {
-        content: "\2713";
-    }
 
-    ul.g-li-star>li::before {
-        content: "\2605";
-    }
 
-    .g-li>li:before {
-        content: "\00a0";
-        position: absolute;
-        left: -33px;
-        top: 0;
-        width: 25px;
-        background-image: url(/dist/images/arrow-right.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
 
-    // .g-li li:before {
-    //     content: '';
-    //     position: absolute;
-    //     left: -33px;
-    //     top: 0;
-    //     bottom: 0;
-    //     width: 25px;
-    //     background-image: url(/dist/images/arrow-right.svg);
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-    // }
 }
 
 .g-collapsible-paragraph {
@@ -909,8 +898,13 @@ blockquote>p>cite {
 
     }
 
-    .galaxy-app-header.fixed-top .navbar-nav .nav-item .nav-link {
-        color: #061644;
+    .galaxy-app-header.fixed-top .navbar-nav .nav-item {
+        .nav-link {
+            color: #061644;
+        }
+        &.active .nav-link{
+            color: #ed7d31;
+        }
     }
 
     .dropdown.open .nav-link .caret {
@@ -919,6 +913,8 @@ blockquote>p>cite {
 }
 
 @include media-breakpoint-down(sm) {
+
+    .g-title,
     .g-title-1 {
         font-size: 2rem;
     }

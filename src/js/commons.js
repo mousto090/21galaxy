@@ -58,6 +58,15 @@ var commons = {
             }
         });
 
+        //make navbar menu active
+        var menuPath = (window.location.pathname || '').trim();
+        if (menuPath.length > 0) {
+            var $menuItem = $navHeader.find(`a[href="${menuPath}"]`);
+            $menuItem.addClass('active').closest('.nav-item').addClass('active');
+        }
+
+
+        //close navbar collapse
         $(document).click(function(e) {
             var $target = $(e.target);
             if ($target.closest('.navbar-collapse').length) {
@@ -80,6 +89,9 @@ var commons = {
             $this.toggleClass('open', !$this.hasClass('open'));
         });
     },
+    /**
+     * Allow stick and unstick navbar
+     */
     navbarFixed: false,
     /**
      * 

@@ -4,6 +4,7 @@ module.exports = {
     // entry: './src/js/index.js',
     entry: {
         '/js/index': './src/js/index',
+        '/js/poles': './src/js/poles',
         '/js/decouvrir': './src/js/decouvrir',
         '/js/expertises': './src/js/expertises',
         '/js/sectors': './src/js/sectors',
